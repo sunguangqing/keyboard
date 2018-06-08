@@ -1,0 +1,434 @@
+/*reset css*/
+body, div, p, input, button, textarea, select, img, h1, h2, h3, h4, h5, h6, dl, dd, dt, ul, ol, li, a, i,
+table, tbody, thead, th, td, b, em {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, select, button, img {
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #595959;
+}
+:focus {
+    outline: none;
+}
+/*浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*清除浮动*/
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/*行内元素*/
+.inline, span, a, b, i, em {
+    display: inline-block;
+}
+/*按钮*/
+[class$="-btn"]{
+    cursor: pointer;
+}
+/*勾选按钮*/
+.checkedBox{
+    cursor: pointer;
+}
+.checkedBox i{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;;
+    vertical-align: text-bottom;
+    background-color: #fff;
+}
+.checkedBox i.checked{
+    border: 0;
+    background: url("../images/login-sprite.png") no-repeat -23px -42px;
+}
+.checkedBox input{
+    opacity: 0;
+    margin-left: -6px;
+}
+input::-webkit-input-placeholder {
+    color: #bfbfbf;
+}
+input:-moz-placeholder {
+    color: #bfbfbf;
+}
+input::-moz-placeholder {
+    color: #bfbfbf;
+}
+input:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+input[type = text], input[type = password]{
+    padding: 0 12px;
+}
+button, input[type = submit], input[type = button]{
+    cursor: pointer;
+}
+
+/*开始*/
+body{
+    color: #595959;
+    font-size: 14px;
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+a:hover{
+    color: #a7e1f1;
+    text-decoration: underline;
+}
+/*form 表单*/
+.form-input{
+    width: 360px;
+    margin: 0 auto;
+}
+.form-input .fill-in{
+    height: 40px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 23px;
+}
+.form-input .fill-in input{
+    float: left;
+    height: 38px;
+    width: 235px;
+}
+.form-check{
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.form-check a{
+    color: #a7e1f1;
+}
+.form-submit{
+    width: 100%;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #a7e1f1;
+}
+/*img 验证码*/
+.form-vcode{
+    margin-bottom: 23px;
+}
+.form-vcode input{
+    float: left;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #d9d9d9;
+}
+/*padding-top*/
+.top-14{
+    padding-top: 14px;
+}
+.container-padding-top{
+    background-color: #f5f5f5;
+}
+.container-padding-top .w1200{
+    background-color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}
+.container-padding-top .title{
+    margin-bottom: 50px;
+}
+/*表单提示语*/
+.form-input .prompt{
+    clear: both;
+    font-size: 12px;
+    color: #bfbfbf;
+    text-align: left;
+    line-height: 25px;
+    padding-left: 12px;
+}
+/*表单右侧按钮*/
+.form-right-btn{
+    width: 21px;
+    height: 21px;
+    background: url("../images/login-sprite.png") no-repeat 0 0;
+    margin-right: 12px;
+    margin-top: 9px;
+}
+.cancel-btn{
+    background-position: -21px -19px;
+}
+.keyboard-btn{
+    background-position: -21px 2px;
+}
+/*验证码按钮*/
+.code-btn{
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    background-color: #f5f5f5;
+}
+/*顶部*/
+.header{
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    color: #a7e1f1;
+    border-top: 1px solid #e8e8e8;
+}
+/*主体内容*/
+.container{
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 55px 0;
+}
+.login-container{
+    height: 580px;
+    background-color: #a7e1f1;
+}
+.login-wrap{
+    background-color: #a7e1f1;
+    padding: 4px;
+}
+.login-box{
+    width: 360px;
+    background-color: #fff;
+}
+.login-tabs{
+    height: 56px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 19px 0;
+}
+.login-tabs li{
+    float: left;
+    width: 50%;
+    line-height: 18px;
+    text-align: center;
+}
+.login-tabs li a{
+    font-size: 18px;
+    display: block;
+}
+.login-tabs li.active a{
+    font-weight: bold;
+    color: #a7e1f1;
+}
+.login-tabs li:first-child{
+    border-right: 1px solid #e8e8e8;
+}
+.login-content{
+    padding: 32px 24px 0;
+}
+.login-content .login-text{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+}
+.login-content .login-text > span:first-child{
+    float: left;
+    width: 39px;
+    height: 38px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    background-color: #f5f5f5;
+}
+.login-content .login-text > span > i{
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/login-sprite.png");
+    background-repeat: no-repeat;
+    margin-top: 11px
+}
+.login-content .login-phone i{
+    background-position: 0 -19px;
+}
+.login-content .login-pwd i{
+    background-position: 0 -38px;
+}
+.login-content .login-text > input{
+    height: 38px;
+    line-height: 38px;
+    width: 232px;
+    color: #595959;
+}
+.remember{
+    margin: 11px 0;
+    padding-top: 11px;
+}
+.remember .forget{
+    float: right;
+}
+.login-submit input{
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #a7e1f1;
+}
+/*tabs 2*/
+.login-content .login-msg{
+    margin-bottom: 61px;
+}
+.login-content .login-msg input{
+    width: 150px;
+}
+.login-content .login-msg i{
+    background-position: 0 0;
+}
+.login-content .login-msg .code-btn, .form-code .code-btn{
+    width: 121px;
+    line-height: 38px;
+}
+/*tabs 切换*/
+.login-content li{
+    display: none;
+}
+.login-content li.active{
+    display: block;
+}
+.register-btn{
+    display: block;
+    width: 65px;
+    color: #a7e1f1;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0 36px;
+}
+.other-accounts{
+    text-align: center;
+}
+.other-accounts .title{
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+}
+.other-accounts .title span{
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+    color: #8c8c8c;
+    padding: 0 16px;
+    background-color: #fff;
+}
+.login-other{
+    padding: 8px 0 20px;
+}
+.login-other i{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/login-sprite.png");
+    background-repeat: no-repeat;
+}
+.login-other a{
+    line-height: 18px;
+    border-right: 1px solid #e8e8e8;
+    padding: 0 9px;
+}
+.login-other a:last-child{
+    border-right: 0;
+}
+.login-other .qq i{
+    background-position: 0 -56px;
+}
+.login-other .wechat i{
+    background-position: 0 -74px;
+}
+.login-other .blog i{
+    background-position: 0 -91px;
+}
+/*底部*/
+.login-footer{
+    text-align: center;
+    padding: 35px 0 40px;
+}
+.login-footer .footer-nav a{
+    float: left;
+    border-right: 2px solid #cdcdcd;
+    line-height: 15px;
+    padding: 0 15px;
+}
+.login-footer .footer-nav a:last-child{
+    border-right: 0;
+}
+.copyright{
+    line-height: 45px;
+}
+
+/*软键盘*/
+.key_board{right: -1px;font:0.8em Arial,sans-serif;position:absolute;border:1px solid #d9d9d9;padding:20px;border-radius:5px 0 5px 5px;background:#fff;height:175px;display:none;z-index:999; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.keyboard_row,.keyboard_row td{padding:0;vertical-align:top;border-collapse:collapse;}
+.keyboard_key,.keyboard_key-m img{margin:0;padding:0;}
+.keyboard_key{font-size:18px;position:relative;display:block;width:32px;height:32px;margin-right:3px;cursor:pointer;text-align:center;border:1px solid #e8e8e8;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;}
+.keyboard_key:active{color: #a7e1f1;border:1px solid #a7e1f1;}
+.keyboard_key-m{line-height:29px;}
+.spacer{width:60px;visibility:hidden;}
+.backspace,.lshift,.rshift,.capslock,.atmark{text-align:left;}
+.backspace .keyboard_key-m,.lshift .keyboard_key-m,.rshift .keyboard_key-m,.capslock .keyboard_key-m,.atmark .keyboard_key-m{padding-left:10px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.backspace{width:77px;}
+.atmark{width:42px;}
+.capslock{font-size:12px;width:52px;}
+.keyboard_key-m img{margin-top:8px;}
+.enter{font-size:12px;width:57px;}
+.lshift{font-size:12px;width:62px;}
+.rshift{font-size:12px;width:82px;}
+.sch{font-size:14px;}
+.space{width:240px;}
+.alt{font-size:16px;width:85px;}
+.marked{background-color:#dfffcc;}
+.pressed .keyboard_key-m{line-height:31px;}
+.suppressed{background-color:#a7e1f1;}
+.suppressed .keyboard_key-m{line-height:31px;}
+.disabled{cursor:default;color:#e6e6e6;}
+.keyboard_lang{font-size:11px;width:141px;text-align:left;}
+.keyboard_lang-i{width:62px;position:relative;top:4px;float:left;padding:3px 9px 3px 7px;background:#fff;border:1px solid #e8e8e8;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.keyboard_lang-ru .keyboard_lang-ic{background-position:0 -48px;}
+.keyboard_lang-es .keyboard_lang-ic{background-position:0 -36px;}
+.keyboard_lang-fr .keyboard_lang-ic{background-position:0 -24px;}
+.keyboard_lang-de .keyboard_lang-ic{background-position:0 -12px;}
+.keyboard_lang-en .keyboard_lang-ic{background-position:0 0;}
+.keyboard_row td{padding-bottom:3px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.keyboard_lang-selector .b-menu__item{font-size:11px;}
+.key_board .b-menu__layout-vert{margin:0;padding:0;list-style:none;}
+.keyboard_lang-selector{display:none;position:absolute;bottom:-1px;left:-1px;box-shadow: 0 0 1px 0 rgba(0,0,0,.6),0 10px 25px -5px rgba(0,0,0,0.4);width:80px;background:#fff;}
+.keyboard_lang-selector .b-menu__layout-vert li{padding:0.5em; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.keyboard_lang a{text-decoration:none;color:#222;}
+.keyboard_lang a:hover{color:#a7e1f1;}
+.keyboard_ico{width:21px;height:21px;background: url(../images/login-sprite.png) no-repeat -21px 2px;;cursor:pointer;display:block;position:absolute;z-index:200;top: 9px;right: 12px;}
+.keyboard_ico:hover,.keyboard_ico.active{opacity:1;}
+.keyboard_close{position:absolute;right:7px;top:7px;height:8px;overflow:hidden;width:9px;cursor:pointer;background:url('../images/close.png') 0 top no-repeat;}

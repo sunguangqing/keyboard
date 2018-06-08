@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 根据浏览器的屏幕大小自适应的展现合适的效果 -->
+    <meta name="applicable-device" content="pc,mobile"/>
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!--自动选择更好的浏览器-->
+    <meta name="renderer" content="webkit">
+    <title>欢迎登录</title>
+    <link rel="stylesheet" href="css/keyboard.css" />
+</head>
+<body>
+<!--顶部-->
+<div class="login-header header">
+    <div class="w1200">
+        <span class="title">欢迎登录</span>
+    </div>
+</div>
+
+<!--内容主体-->
+<div class="container login-container">
+    <div class="w1200 clearfix">
+        <div class="fl"><img src="images/login2.jpg" /></div>
+        <div class="fr login-wrap">
+            <div class="login-box">
+                <ul class="login-tabs">
+                    <li class="active"><a href="#">会员登录</a></li>
+                    <li><a href="#">手机免密登录</a></li>
+                </ul>
+                <ul class="login-content">
+                    <li class="active">
+                        <div class="login-text login-phone">
+                            <span><i></i></span><input placeholder="手机号" type="text" />
+                            <a class="fr form-right-btn cancel-btn" href="javascript:;"></a>
+                        </div>
+                        <div class="login-text login-pwd">
+                            <span><i></i></span><input placeholder="密码" type="password" />
+                        </div>
+                        <div class="remember clearfix">
+                            <label class="checkedBox" for="remember"><i></i><input id="remember" class="checkedInput" type="checkbox" />记住用户名</label>
+                            <a class="forget" href="javascript:;">忘记密码？</a>
+                        </div>
+                        <div class="login-submit"><input type="submit" value="登录" /></div>
+                    </li>
+                    <li>
+                        <div class="login-text login-phone">
+                            <span><i></i></span><input placeholder="手机号" type="text" />
+                            <a class="fr form-right-btn cancel-btn" href="javascript:;"></a>
+                        </div>
+                        <div class="login-text login-msg">
+                            <span><i></i></span><input placeholder="短信验证码" type="text" />
+                            <a class="fr code-btn" href="#">获取短信验证码</a>
+                        </div>
+                        <div class="login-submit"><input type="submit" value="登录" /></div>
+                    </li>
+                </ul>
+                <a class="register-btn" href="javascript:;">免费注册</a>
+                <div class="other-accounts">
+                    <p class="title"><span>使用以下账号登录</span></p>
+                    <div class="login-other">
+                        <a class="qq" href="#"><i></i>QQ</a>
+                        <a class="wechat" href="#"><i></i>微信</a>
+                        <a class="blog" href="#"><i></i>微博</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--底部-->
+<div class="login-footer">
+    <div class="w1200">
+        <div class="footer-nav inline clearfix">
+            <a href="#">公司简介</a>
+            <a href="#">联系我们</a>
+            <a href="#">商家入驻</a>
+            <a href="#">招商标准</a>
+            <a href="#">免责声明</a>
+            <a href="#">网站地图</a>
+            <a href="#">友情链接</a>
+        </div>
+        <div class="message copyright">Copyright@2017-2022　复鑫网fx1988.com　版权所有　安徽复鑫电子商务有限责任公司　皖ICP备17004149号-2</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/keyboard.js"></script>
+</body>
+</html>
