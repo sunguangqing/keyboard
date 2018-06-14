@@ -430,7 +430,7 @@ a:hover{
 .keyboard_lang-selector .b-menu__layout-vert li{padding:0.5em; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .keyboard_lang a{text-decoration:none;color:#222;}
 .keyboard_lang a:hover{color:#a7e1f1;}
-.keyboard_ico{width:21px;height:21px;background: url(../images/login-sprite.png) no-repeat -21px 2px;;cursor:pointer;display:none;position:absolute;z-index:200;top: 9px;right: 12px;}
+.keyboard_ico{width:21px;height:21px;background: url(../images/login-sprite.png) no-repeat -21px 2px;;cursor:pointer;display:none;position:absolute;z-index:200;top: 9px;right: 46px;}
 .keyboard_ico:hover,.keyboard_ico.active{opacity:1;}
 .keyboard_close{position:absolute;right:7px;top:7px;height:8px;overflow:hidden;width:9px;cursor:pointer;background:url('../images/close.png') 0 top no-repeat;}
 .login-pwd:hover .keyboard_ico, .login-pwd input:focus ~ .keyboard_ico{display: block;}
