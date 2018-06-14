@@ -20,6 +20,31 @@ $(function () {
     $('.login-pwd > input').keyboard({
         lang: 'en'
     });
+	
+   //是否显示右侧清空按钮
+   if($(".login-text input").length !== 0){
+        $(".login-text input").each(function(){
+            if($(this).val().length >= 1){
+                $(this).siblings(".form-right-btn").show();
+            }else{
+                $(this).siblings(".form-right-btn").hide();
+            }
+        });
+    }
+    $(".form-right-btn").on("click", function(){
+        $(this).hide();
+        $(this).siblings("input").val("");
+    });
+    $(".login-text input").on("change, keyup", function(){
+        if($(this).val().length >= 1){
+            $(this).siblings(".form-right-btn").show();
+        }else{
+            $(this).siblings(".form-right-btn").hide();
+        }
+    });
+    $(document).on("click", ".keyboard_row span", function () {
+        $(this).parents(".key_board").siblings(".form-right-btn").show();
+    });
 
 });
 
